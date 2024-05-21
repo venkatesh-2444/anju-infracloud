@@ -89,7 +89,7 @@ This project provides instructions and scripts to set up a containerized CSV ser
          docker rm <container_id>
 
 
-- Save the files gencsv.sh, inputFile, part-1-cmd, part-1-output, part-1-logs.
+- Save the above generated files gencsv.sh, inputFile, part-1-cmd, part-1-output, part-1-logs.
 
 
 ## Part 2: Running the Container with Docker Compose
@@ -148,4 +148,3 @@ This project provides instructions and scripts to set up a containerized CSV ser
   To stop and remove the running containers:
  
           docker-compose down
-
