@@ -1,4 +1,3 @@
-
 ### CSV Server Container Setup
 
 This project provides instructions and scripts to set up a containerized CSV server application using `infracloudio/csvserver:latest`, along with Prometheus for monitoring. Follow the steps below to get the application running and accessible with specific configurations.
@@ -75,11 +74,7 @@ This project provides instructions and scripts to set up a containerized CSV ser
 
           docker run -d -p 9393:9300 -e CSVSERVER_BORDER=Orange -v "$(pwd)/inputdata:/csvserver/inputdata" infracloudio/csvserver:latest
 
-- Stop and remove the running container:
 
-
-         docker stop <container_id>
-         docker rm <container_id>
 
   Check the container status:
 
@@ -87,8 +82,14 @@ This project provides instructions and scripts to set up a containerized CSV ser
 
 - Verify the desired result by accessing http://localhost:9393.
 
+-  Stop and remove the running container:
 
-- Save the above generated files gencsv.sh, inputFile, part-1-cmd, part-1-output, part-1-logs.
+
+         docker stop <container_id>
+         docker rm <container_id>
+
+
+- Save the files gencsv.sh, inputFile, part-1-cmd, part-1-output, part-1-logs.
 
 
 ## Part 2: Running the Container with Docker Compose
@@ -147,8 +148,4 @@ This project provides instructions and scripts to set up a containerized CSV ser
   To stop and remove the running containers:
  
           docker-compose down
-
-
-
-
 
